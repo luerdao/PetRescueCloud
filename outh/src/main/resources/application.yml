@@ -1,0 +1,17 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: outh-server
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 162.14.96.147:8848
+#      config:
+#        server-addr: ${spring.cloud.nacos.discovery.server-addr}
+#        file-extension: yml
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://162.14.96.147:8866/mypet?serverTimezone=Asia/Shanghai&characterEncoding=utf8
+    username: root
+    password: 123456
